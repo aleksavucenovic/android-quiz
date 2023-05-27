@@ -13,6 +13,10 @@ public class GameStats {
         this.gamesLost = gamesLost;
     }
 
+    public GameStats() {
+
+    }
+
     public int getScoreRange() {
         return scoreRange;
     }
@@ -27,5 +31,21 @@ public class GameStats {
 
     public int getGamesLost() {
         return gamesLost;
+    }
+
+    public void setScoreRange(int scoreRange) {
+        this.scoreRange = scoreRange;
+    }
+
+    public void setTotalGamesPlayed(int totalGamesPlayed) {
+        this.totalGamesPlayed = totalGamesPlayed;
+    }
+
+    public void setGamesWon(int gamesWon) {
+        this.gamesWon = gamesWon;
+    }
+
+    public void setGamesLost(int gamesLost) {
+        this.gamesLost = gamesLost;
     }
 }

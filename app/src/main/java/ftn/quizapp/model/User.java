@@ -10,16 +10,25 @@ public class User {
     private String username;
     private String password;
     private String email;
-    private Bitmap image;
+    private String image;
     private HashMap<String, GameStats> gameStats;
 
-    public User(Integer id, String username, String password, String email, Bitmap image, HashMap<String, GameStats> gameStats) {
-        this.id = id;
+    public User(String username, String password, String email, String image, HashMap<String, GameStats> gameStats) {
         this.username = username;
         this.password = password;
         this.email = email;
         this.image = image;
         this.gameStats = gameStats;
+    }
+
+    public User(String username, String password, String email, HashMap<String, GameStats> gameStats) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.gameStats = gameStats;
+    }
+
+    public User() {
     }
 
     public Integer getId() {
@@ -54,11 +63,11 @@ public class User {
         this.email = email;
     }
 
-    public Bitmap getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(Bitmap image) {
+    public void setImage(String image) {
         this.image = image;
     }
 

@@ -23,7 +23,7 @@
 
         <activity
             android:name=".activities.MainActivity"
-            android:label="Home" />
+            android:label="Main" />
 
         <activity
             android:name=".activities.LoginActivity"
@@ -32,6 +32,14 @@
         <activity
             android:name=".activities.RegisterActivity"
             android:label="Register" />
+
+        <activity
+            android:name=".activities.HomeActivity"
+            android:label="Home" />
+
+        <activity
+            android:name=".activities.UserProfileActivity"
+            android:label="User Profile" />
 
 
     </application>
