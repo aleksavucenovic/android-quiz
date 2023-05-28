@@ -140,13 +140,21 @@ public class RegisterActivity extends Activity {
         gameStats2.setTotalGamesPlayed(0);
         gameStats2.setGamesWon(0);
         gameStats2.setGamesLost(0);
-        gameStats.put("game", gameStats2);
+        gameStats.put("slagalica", gameStats2);
+
+        GameStats gameStats3 = new GameStats();
+        gameStats3.setScoreRange(1);
+        gameStats3.setTotalGamesPlayed(22);
+        gameStats3.setGamesWon(3);
+        gameStats3.setGamesLost(12);
+        gameStats.put("asocijacije", gameStats3);
 
         User user = new User(username, email, password, id, gameStats);
         mDatabase.child("users").child(id).setValue(user);
 
         Intent intent = new Intent(RegisterActivity.this, HomeActivity.class);
         startActivity(intent);
+        finish();
     }
 
 

@@ -3,11 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/aleks/Desktop/Quiz-Android/app/src/main/res/layout/basic_drawer.xml" value="0.2504273504273504" />
+        <entry key="..\:/Users/aleks/Desktop/Quiz-Android/app/src/main/res/layout/basic_drawer.xml" value="0.18" />
         <entry key="..\:/Users/aleks/Desktop/Quiz-Android/app/src/main/res/layout/home_activity.xml" value="0.22" />
         <entry key="..\:/Users/aleks/Desktop/Quiz-Android/app/src/main/res/layout/login_activity.xml" value="0.1" />
         <entry key="..\:/Users/aleks/Desktop/Quiz-Android/app/src/main/res/layout/main_activity.xml" value="0.1" />
         <entry key="..\:/Users/aleks/Desktop/Quiz-Android/app/src/main/res/layout/user_profile_activity.xml" value="0.2504273504273504" />
+        <entry key="..\:/Users/aleks/Desktop/Quiz-Android/app/src/main/res/layout/user_stats.xml" value="0.25" />
       </map>
     </option>
   </component>

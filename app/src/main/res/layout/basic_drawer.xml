@@ -10,11 +10,33 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/myProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#787878"
+            android:text="My Profile" />
+
+        <Button
+            android:id="@+id/myStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#787878"
+            android:text="My Stats" />
+
+        <Button
+            android:id="@+id/rangList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#787878"
+            android:text="Rang list" />
+
+        <Button
             android:id="@+id/logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#FF0000"
-            android:text="Log Out" />
+            android:text="Log Out"
+            />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

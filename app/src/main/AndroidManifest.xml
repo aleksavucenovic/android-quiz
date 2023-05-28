@@ -41,6 +41,10 @@
             android:name=".activities.UserProfileActivity"
             android:label="User Profile" />
 
+        <activity
+            android:name=".activities.UserStatsActivity"
+            android:label="User Stats" />
+
 
     </application>
 

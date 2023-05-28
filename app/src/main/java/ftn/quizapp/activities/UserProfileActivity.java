@@ -14,6 +14,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -39,9 +43,10 @@ import java.util.UUID;
 import javax.annotation.Nullable;
 
 import ftn.quizapp.R;
+import ftn.quizapp.fragments.FragmentBasicDrawer;
 import ftn.quizapp.model.User;
 
-public class UserProfileActivity extends Activity {
+public class UserProfileActivity extends AppCompatActivity {
 
     public ImageView profileImage;
     private FirebaseAuth mAuth;
@@ -62,6 +67,13 @@ public class UserProfileActivity extends Activity {
 
         TextView username = findViewById(R.id.username);
         TextView email = findViewById(R.id.email);
+
+
+        FragmentBasicDrawer fragment = new FragmentBasicDrawer();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.navigationView, fragment);
+        fragmentTransaction.commit();
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String userId = user.getUid();

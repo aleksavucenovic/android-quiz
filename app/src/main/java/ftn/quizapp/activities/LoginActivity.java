@@ -67,6 +67,7 @@ public class LoginActivity extends Activity {
                             Log.d(TAG, "SUCCESS");
                             Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                             startActivity(intent);
+                            finish();
                         } else {
                             Log.w(TAG, "ERROR", task.getException());
                             Toast.makeText(LoginActivity.this,
